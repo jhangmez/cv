@@ -1,22 +1,12 @@
-# CV - Angular
+# CV - Angular | Jhan Gómez P.
 
-Este es un proyecto donde simulo [este Portafolio](https://cv.jarocki.me) 
+Este es un proyecto donde simulo [este Portafolio](https://cv.jarocki.me)
 
-This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to Vercel with zero configuration.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+## Ejecutar servidor
 
-## Deploy Your Own
-
-Deploy your own Angular project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/angular&template=angular)
-
-_Live Example: https://angular-template.vercel.app_
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecuta `ng serve` para cargar el servidor. Dirijase a `http://localhost:4200/`. La aplicación cargará automáticamente si usted cambia algún archivo.
 
 ## Code scaffolding
 
