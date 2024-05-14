@@ -1,4 +1,6 @@
-# Angular
+# CV - Angular
+
+Este es un proyecto donde simulo [este Portafolio](https://cv.jarocki.me) 
 
 This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed to Vercel with zero configuration.
 
