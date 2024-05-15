@@ -7,4 +7,32 @@ import { Component } from '@angular/core';
   templateUrl: './education.component.html',
   styleUrl: './education.component.css',
 })
-export class EducationComponent {}
+export class EducationComponent {
+  college = 'Universidad Nacional Pedro Ruiz Gallo';
+  dates = {
+    start: new Date('2019-09-23'),
+    end: new Date('2024-09-23'),
+  };
+  getYear(date: Date): string {
+    return date.getFullYear().toString();
+  }
+
+  getMonthText(date: Date): string {
+    const monthNames = [
+      'Ene',
+      'Feb',
+      'Mar',
+      'Abr',
+      'May',
+      'Jun',
+      'Jul',
+      'Ago',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dic',
+    ];
+    return monthNames[date.getMonth()];
+  }
+  title = 'Estudiante de Ingenieria de sistemas';
+}

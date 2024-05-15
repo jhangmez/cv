@@ -1,1 +1,21 @@
-<p>education works!</p>
+<div class="flex min-h-0 flex-col gap-y-3">
+  <h2 class="text-xl font-bold">Educación</h2>
+  <ul class="rounded-lg bg-card text-card-foreground">
+    <li class="flex flex-row justify-between">
+      <h3 class="font-semibold">{{ college }}</h3>
+      <p class="tabular-nums text-black/60 inline-flex">
+        <span class="lg:flex hidden"
+          >{{ getMonthText(dates.start) }}.&nbsp;</span
+        >
+        {{ getYear(dates.start) }} -
+        <span class="lg:flex hidden">{{ getMonthText(dates.end) }}.&nbsp;</span>
+        {{ getYear(dates.end) }}
+      </p>
+    </li>
+    <li
+      class="text-pretty font-mono text-sm text-muted-foreground mt-2 text-black/60"
+    >
+      {{ title }}
+    </li>
+  </ul>
+</div>
