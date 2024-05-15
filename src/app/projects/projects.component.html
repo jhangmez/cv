@@ -1,6 +1,60 @@
-<div class="flex min-h-0 flex-col gap-y-3">
+<section class="flex min-h-0 flex-col gap-y-3 scroll-mb-16 pagebreak">
   <h2 class="text-xl font-bold">Proyectos freelance</h2>
-  <p class="text-pretty font-mono text-sm text-muted-foreground text-black/60">
-    -----
-  </p>
-</div>
+  <ul
+    class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
+  >
+    @for(project of projects; track project.id){
+    <li
+      class="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-muted p-3"
+    >
+      <div class="flex flex-col space-y-1.5">
+        <div class="space-y-1">
+          <div class="flex items-center">
+            <a
+              class="font-semibold tracking-tight text-base hover:underline"
+              href="{{ project.url }}"
+            >
+              {{ project.title }}
+            </a>
+
+            @if(project.online){<span class="text-green-500 animate-pulse"
+              >&nbsp;•&nbsp;</span
+            >
+            }@else {<span>&nbsp; &nbsp;</span>} @if(project.github){
+            <a
+              href="{{ project.github }}"
+              class="border-none w-fit"
+              target="_blank"
+              ><img
+                ngSrc="assets/icons/github-invert.svg"
+                alt="{{ project.github }}"
+                class="text-black border-none"
+                width="18"
+                height="18"
+            /></a>
+            }
+          </div>
+
+          <p class="hidden font-mono text-xs underline print:flex">
+            {{ project.url }}
+          </p>
+          <p class="text-black/60 font-mono text-xs">
+            {{ project.description }}
+          </p>
+        </div>
+      </div>
+      <div class="text-pretty font-mono text-sm mt-auto flex">
+        <div class="mt-2 flex flex-wrap gap-1">
+          @for(chip of project.chips; track chip.idchip){
+          <p
+            class="inline-flex items-center rounded-md border font-semibold font-mono text-nowrap border-transparent bg-black/10 text-black/90 px-1 py-0 text-[10px]"
+          >
+            {{ chip.description }}
+          </p>
+          }
+        </div>
+      </div>
+    </li>
+    }
+  </ul>
+</section>

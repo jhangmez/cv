@@ -1,0 +1,7 @@
+@media print {
+  .force-print-new-page::after {
+    content: "";
+    display: block;
+    height: 100%;
+  }
+}

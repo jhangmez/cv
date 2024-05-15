@@ -1,4 +1,18 @@
 <div class="flex min-h-0 flex-col gap-y-3">
   <h2 class="text-xl font-bold">Skills</h2>
-  <div class="flex flex-wrap gap-1">----</div>
+  <ul class="flex flex-wrap gap-1">
+    @for(skill of skills; track skill.id){
+    <li
+      class="inline-flex items-center rounded-md border px-2 py-0.5 gap-1 text-xs font-semibold font-mono select-none focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-black/10 text-black-foreground hover:bg-black/20 transition-colors"
+    >
+      <img
+        ngSrc="{{ skill.icon }}"
+        alt="{{ skill.name }}"
+        width="16"
+        height="16"
+      />
+      {{ skill.name }}
+    </li>
+    }
+  </ul>
 </div>

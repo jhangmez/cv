@@ -1,6 +1,47 @@
 <div class="flex min-h-0 flex-col gap-y-3">
   <h2 class="text-xl font-bold">Experiencia profesional</h2>
-  <p class="text-pretty font-mono text-sm text-muted-foreground text-black/60">
-    -----
-  </p>
+  @for(job of experiences; track job.id){
+  <ul class="rounded-lg bg-card text-card-foreground">
+    <li class="flex flex-col">
+      <div class="flex items-center justify-between gap-x-2 text-base">
+        <div
+          class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none"
+        >
+          <a class="hover:underline" href="{{ job.link }}" target="_blank">{{
+            job.company
+          }}</a>
+          @if(job.remote){
+          <p
+            class="inline-flex items-center rounded-md border border-transparent px-2 py-0.5 font-semibold font-mono bg-black/5 text-xs select-none"
+          >
+            Remoto
+          </p>
+          }
+        </div>
+        <p class="tabular-nums text-black/60 inline-flex">
+          <span class="lg:flex print:flex hidden"
+            >{{ getMonthText(job.dates.start) }}.&nbsp;</span
+          >
+          {{ getYear(job.dates.start) }} -&nbsp;
+          <span class="lg:flex print:flex hidden"
+            >{{ getMonthText(job.dates.end) }}.&nbsp;</span
+          >
+          {{ getYear(job.dates.end) }}
+        </p>
+      </div>
+      <div>
+        @for(rol of job.rols; track rol.idRol){
+        <h4 class="font-mono text-sm inline-flex leading-none">
+          @if(rol.idRol -1){&nbsp;→ }
+
+          {{ rol.nombreRol }}
+        </h4>
+        }
+      </div>
+    </li>
+    <li class="text-pretty font-mono text-black/60 mt-2 text-xs">
+      {{ job.description }}
+    </li>
+  </ul>
+  }
 </div>

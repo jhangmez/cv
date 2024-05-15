@@ -4,11 +4,13 @@
     <li class="flex flex-row justify-between">
       <h3 class="font-semibold">{{ college }}</h3>
       <p class="tabular-nums text-black/60 inline-flex">
-        <span class="lg:flex hidden"
+        <span class="lg:flex print:flex hidden"
           >{{ getMonthText(dates.start) }}.&nbsp;</span
         >
-        {{ getYear(dates.start) }} -
-        <span class="lg:flex hidden">{{ getMonthText(dates.end) }}.&nbsp;</span>
+        {{ getYear(dates.start) }} -&nbsp;
+        <span class="lg:flex print:flex hidden"
+          >{{ getMonthText(dates.end) }}.&nbsp;</span
+        >
         {{ getYear(dates.end) }}
       </p>
     </li>
