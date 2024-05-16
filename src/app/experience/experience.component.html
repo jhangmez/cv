@@ -7,18 +7,23 @@
         <div
           class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none"
         >
-          <a class="hover:underline" href="{{ job.link }}" target="_blank">{{
-            job.company
-          }}</a>
+          <a
+            class="hover:underline w-fit"
+            href="{{ job.link }}"
+            target="_blank"
+            >{{ job.company }}</a
+          >
           @if(job.remote){
           <p
-            class="inline-flex items-center rounded-md border border-transparent px-2 py-0.5 font-semibold font-mono bg-black/5 text-xs select-none"
+            class="inline-flex items-center rounded-md border border-transparent px-2 py-0.5 font-semibold font-mono bg-black/5 hover:bg-black/10 transition-colors text-xs select-none"
           >
             Remoto
           </p>
           }
         </div>
-        <p class="tabular-nums text-black/60 inline-flex">
+        <p
+          class="tabular-nums text-black/60 inline-flex lg:text-base md:text-base text-xs whitespace-nowrap my-auto"
+        >
           <span class="lg:flex print:flex hidden"
             >{{ getMonthText(job.dates.start) }}.&nbsp;</span
           >

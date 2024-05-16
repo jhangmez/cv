@@ -6,6 +6,7 @@ import { EducationComponent } from './education/education.component';
 import { AboutComponent } from './about/about.component';
 import { MeComponent } from './me/me.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { ProjectsComponent } from './projects/projects.component';
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -13,17 +13,20 @@
             <a
               class="font-semibold tracking-tight text-base hover:underline"
               href="{{ project.url }}"
+              target="_blank"
             >
               {{ project.title }}
             </a>
 
-            @if(project.online){<span class="text-green-500 animate-pulse"
+            @if(project.online){
+            <span class="text-green-500 animate-pulse print:hidden"
               >&nbsp;•&nbsp;</span
             >
-            }@else {<span>&nbsp; &nbsp;</span>} @if(project.github){
+            }@else {<span class="select-none">&nbsp; &nbsp;</span>}
+            @if(project.github){
             <a
               href="{{ project.github }}"
-              class="border-none w-fit"
+              class="border-none w-fit print:hidden select-none"
               target="_blank"
               ><img
                 ngSrc="assets/icons/github-invert.svg"
@@ -32,6 +35,14 @@
                 width="18"
                 height="18"
             /></a>
+            } @if(project.owner){&nbsp;
+            <img
+              ngSrc="assets/icons/owner.svg"
+              alt="Creado por @jhangmez"
+              class="text-black border-none select-none print:hidden"
+              width="18"
+              height="18"
+            />
             }
           </div>
 
@@ -47,7 +58,7 @@
         <div class="mt-2 flex flex-wrap gap-1">
           @for(chip of project.chips; track chip.idchip){
           <p
-            class="inline-flex items-center rounded-md border font-semibold font-mono text-nowrap border-transparent bg-black/10 text-black/90 px-1 py-0 text-[10px]"
+            class="inline-flex items-center rounded-md border font-semibold font-mono text-nowrap border-transparent bg-black/10 hover:bg-black/20 transition-colors text-black/90 px-1 py-0 select-none text-[10px]"
           >
             {{ chip.description }}
           </p>
