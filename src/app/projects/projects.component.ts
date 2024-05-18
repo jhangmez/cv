@@ -17,7 +17,7 @@ export class ProjectsComponent {
       owner: true,
       online: true,
       github: 'https://github.com/jhangmez/quatu',
-      description: 'Tiendas virtuales como SaaS',
+      description: 'Tiendas virtuales como SaaS.',
       chips: [
         {
           idchip: 1,
@@ -48,7 +48,7 @@ export class ProjectsComponent {
       owner: true,
       online: true,
       github: 'https://github.com/jhangmez/pagina',
-      description: 'Portafolio Web',
+      description: 'Portafolio Web personal.',
       chips: [
         {
           idchip: 1,
@@ -87,7 +87,7 @@ export class ProjectsComponent {
       owner: true,
       online: true,
       github: 'https://github.com/jhangmez/cv',
-      description: 'Cv listo para imprimir',
+      description: 'Currículum listo para imprimir.',
       chips: [
         {
           idchip: 1,
@@ -111,11 +111,19 @@ export class ProjectsComponent {
       online: false,
       github: 'https://github.com/jhangmez/deporte',
       description:
-        'Desarrollo y apoyo el talento infantil en la industria deportiva',
+        'Proyecto de desarrollo y apoyo al talento infantil en la industria deportiva.',
       chips: [
         {
           idchip: 1,
           description: 'Buenas prácticas',
+        },
+        {
+          idchip: 2,
+          description: 'Postgresql',
+        },
+        {
+          idchip: 3,
+          description: 'Prisma ORM',
         },
       ],
     },
@@ -151,7 +159,8 @@ export class ProjectsComponent {
       url: 'https://educaemprendedor.pe',
       owner: false,
       online: true,
-      description: 'Educa emprededor',
+      description:
+        'Empresa dedicada a la capacitación y especialización de contadores.',
       chips: [
         {
           idchip: 1,
@@ -185,7 +194,7 @@ export class ProjectsComponent {
       url: 'https://limby.vercel.app',
       owner: false,
       online: false,
-      description: 'Limby',
+      description: 'Proyecto de startup enfocada en salud mental',
       chips: [
         {
           idchip: 1,

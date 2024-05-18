@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'me',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './me.component.html',
   styleUrl: './me.component.css',
 })
@@ -16,7 +17,7 @@ export class MeComponent {
   github = 'https://github.com/jhangmez';
   linkedin = 'https://linkedin.com/in/jhangmez';
   description =
-    'Front-end Engineer enfocado en construir productos complejos y de alto tráfico';
+    'Front-end Engineer enfocado en construir productos complejos y de alto tráfico.';
   entries = [
     { label: 'Número', value: this.number },
     { label: 'Email', value: this.email },
