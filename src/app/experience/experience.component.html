@@ -36,11 +36,11 @@
       </div>
       <div>
         @for(rol of job.rols; track rol.idRol){
-        <h4 class="font-mono text-sm inline-flex leading-none">
+        <h2 class="font-mono text-sm inline-flex leading-none">
           @if(rol.idRol -1){&nbsp;→ }
 
           {{ rol.nombreRol }}
-        </h4>
+        </h2>
         }
       </div>
     </li>
