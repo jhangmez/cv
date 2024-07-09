@@ -11,7 +11,6 @@ import { NgOptimizedImage } from '@angular/common';
 export class MeComponent {
   name = 'Jhan Gómez P.';
   city = 'Lambayeque, Perú, PET';
-  number = '+51917463991';
   email = 'jhangmez.pe@gmail.com';
   page = 'https://jhangmez.xyz';
   github = 'https://github.com/jhangmez';
@@ -19,7 +18,6 @@ export class MeComponent {
   description =
     'Front-end Engineer enfocado en construir productos complejos y de alto tráfico.';
   entries = [
-    { label: 'Número', value: this.number },
     { label: 'Email', value: this.email },
     { label: 'Página', value: this.page },
     { label: 'GitHub', value: this.github },
