@@ -42,11 +42,11 @@ export class ExperienceComponent {
       rols: [
         {
           idRol: 1,
-          nombreRol: 'Líder del área de documentación',
+          nombreRol: 'Analista de documentación',
         },
         {
           idRol: 2,
-          nombreRol: 'Analista de documentación',
+          nombreRol: 'Líder del área de documentación',
         },
       ],
       description:
