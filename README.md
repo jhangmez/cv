@@ -32,6 +32,9 @@ Ejecuta `ng e2e` para correr los test de extremo a extremo a través de la plata
 
 Para conseguir ayuda en Angular CLI usa `ng help` o ve a la página de [Angular CLI Overview and Command Reference](https://angular.io/cli).
 
+---
+
+## CV - Angular | Jhan Gómez P.
 <div style="display: flex; align-items: center; height: fit-content;">
   <img src="https://avatars.githubusercontent.com/u/60937214?v=4" width="40" style="margin-right: 10px;"/>
   <span>Hecho con ❤️ por Jhan Gómez P.</span>
