@@ -12,11 +12,41 @@ export class ProjectsComponent {
   projects = [
     {
       id: 1,
+      title: 'GOTEC',
+      url: 'https://gotec.quatu.xyz',
+      owner: true,
+      online: true,
+      description:
+        'Tienda especializada en venta de productos tecnológicos al por mayor de INGO TECHNOLOGIES S.A.C.',
+      chips: [
+        {
+          idchip: 1,
+          description: 'Carrito de compras',
+        },
+        {
+          idchip: 2,
+          description: 'Tienda virtual',
+        },
+        {
+          idchip: 3,
+          description: 'Checking',
+        },
+        {
+          idchip: 4,
+          description: 'Venta de productos',
+        },
+        {
+          idchip: 5,
+          description: 'En desarrollo',
+        },
+      ],
+    },
+    {
+      id: 2,
       title: 'Quatu',
       url: 'https://quatu.xyz',
       owner: true,
       online: true,
-      github: 'https://github.com/jhangmez/quatu',
       description: 'Tiendas virtuales como SaaS.',
       chips: [
         {
@@ -42,7 +72,7 @@ export class ProjectsComponent {
       ],
     },
     {
-      id: 2,
+      id: 3,
       title: 'Portafolio',
       url: 'https://jhangmez.xyz',
       owner: true,
@@ -81,7 +111,7 @@ export class ProjectsComponent {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: 'Currículum',
       url: 'https://cv.jhangmez.xyz',
       owner: true,
@@ -104,7 +134,7 @@ export class ProjectsComponent {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: 'InDeportiva',
       url: 'https://deporte.vercel.app',
       owner: true,
@@ -128,7 +158,7 @@ export class ProjectsComponent {
       ],
     },
     {
-      id: 5,
+      id: 6,
       title: 'Datrack',
       url: 'https://datrack.vercel.app',
       owner: false,
@@ -154,7 +184,7 @@ export class ProjectsComponent {
       ],
     },
     {
-      id: 6,
+      id: 7,
       title: 'Educa emprededor',
       url: 'https://educaemprendedor.pe',
       owner: false,
@@ -189,7 +219,7 @@ export class ProjectsComponent {
       ],
     },
     {
-      id: 7,
+      id: 8,
       title: 'Limby',
       url: 'https://limby.vercel.app',
       owner: false,

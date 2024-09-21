@@ -13,7 +13,7 @@ export class EducationComponent {
     start: new Date('2019-09-23'),
     end: new Date('2024-09-23'),
   };
-  title = 'Estudiante de Ingenieria de sistemas';
+  title = 'Egresado de Ingenieria de sistemas';
   getYear(date: Date): string {
     return date.getFullYear().toString();
   }
